@@ -8,16 +8,20 @@ This version solves "429 - Too many requests" rate limit errors of basic version
 
 Should be used (and was tested) for public profiles download.
 
-Demo:
+Sample screenshot with unsuccessful and successful download of public profile:
 
 .. image:: https://user-images.githubusercontent.com/775507/103315213-6baf2400-4a3e-11eb-91aa-81a062966266.png
 
+This version requires API key for proxies, get it here: https://rapidapi.com/restyler/api/instagram40 
 
 **Usage:**
+Make sure you've removed all previous versions of instaloader (``pip3 uninstall instaloader``) to avoid conflicts.
 
-    $ pip3 install instaloader
+    $ pip3 install git+https://github.com/restyler/instaloader.git
 
-    $ instaloader username1 [username2 ...]
+    $ instaloader username1 [username2 ...] --rapidapi-key=[YOUR-SECRET-KEY]
+
+If ``--rapidapi-key`` arg is not specified - the loader behaves like the basic version of the script, with direct connection to Instagram.
 
 
 - downloads **public and private profiles, hashtags, user stories,
