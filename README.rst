@@ -1,20 +1,23 @@
 
 
 
-**Instaloader (proxified version)**
+Instaloader (proxified version)
+#################
 
 This repo contains RapidApi proxified version of Instagram downloader https://github.com/instaloader/instaloader due to difficulties with bypassing Instagram firewalls from regular data center ip ranges.
 This version solves "429 - Too many requests" rate limit errors of basic version of the downloader.
 
 Should be used (and was tested) for public profiles download.
+This version requires API key for proxies, get it here: https://rapidapi.com/restyler/api/instagram40 
 
 Sample screenshot with unsuccessful and successful download of public profile:
+***************
 
 .. image:: https://user-images.githubusercontent.com/775507/103315213-6baf2400-4a3e-11eb-91aa-81a062966266.png
 
-This version requires API key for proxies, get it here: https://rapidapi.com/restyler/api/instagram40 
 
-**Usage:**
+Usage:
+***************
 Make sure you've removed all previous versions of instaloader (``pip3 uninstall instaloader``) to avoid conflicts.
 
     $ pip3 install git+https://github.com/restyler/instaloader.git
