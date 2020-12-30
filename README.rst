@@ -58,7 +58,7 @@ To **download all pictures and videos of a profile**, as well as the
 
 ::
 
-    instaloader profile [profile ...]
+    instaloader profile [profile ...] --rapidapi-key=[YOUR-SECRET-KEY]
 
 where ``profile`` is the name of a profile you want to download. Instead
 of only one profile, you may also specify a list of profiles.
@@ -67,7 +67,7 @@ To later **update your local copy** of that profiles, you may run
 
 ::
 
-    instaloader --fast-update profile [profile ...]
+    instaloader --fast-update profile [profile ...] --rapidapi-key=[YOUR-SECRET-KEY]
 
 If ``--fast-update`` is given, Instaloader stops when arriving at the
 first already-downloaded picture. When updating profiles, Instaloader
@@ -79,7 +79,7 @@ invoke it with
 
 ::
 
-    instaloader --login=your_username profile [profile ...]
+    instaloader --login=your_username profile [profile ...] --rapidapi-key=[YOUR-SECRET-KEY]
 
 When logging in, Instaloader **stores the session cookies** in a file in your
 temporary directory, which will be reused later the next time ``--login``
