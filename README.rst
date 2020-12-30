@@ -1,45 +1,24 @@
-.. image:: https://raw.githubusercontent.com/instaloader/instaloader/master/docs/logo_heading.png
 
-.. badges-start
 
-|travis| |pypi| |pyversion| |license| |aur| |contributors| |downloads|
 
-.. |travis| image:: https://img.shields.io/travis/instaloader/instaloader/master.svg
-   :alt: Travis-CI Build Status
-   :target: https://travis-ci.org/instaloader/instaloader
+**Instaloader (proxified version)**
 
-.. |pypi| image:: https://img.shields.io/pypi/v/instaloader.svg
-   :alt: Instaloader PyPI Project Page
-   :target: https://pypi.org/project/instaloader/
+This repo contains RapidApi proxified version of Instagram downloader https://github.com/instaloader/instaloader due to difficulties with bypassing Instagram firewalls from regular data center ip ranges.
+This version solves "429 - Too many requests" rate limit errors of basic version of the downloader.
 
-.. |license| image:: https://img.shields.io/github/license/instaloader/instaloader.svg
-   :alt: MIT License
-   :target: https://github.com/instaloader/instaloader/blob/master/LICENSE
+Should be used (and was tested) for public profiles download.
 
-.. |pyversion| image:: https://img.shields.io/pypi/pyversions/instaloader.svg
-   :alt: Supported Python Versions
+Demo:
 
-.. |contributors| image:: https://img.shields.io/github/contributors/instaloader/instaloader.svg
-   :alt: Contributor Count
-   :target: https://github.com/instaloader/instaloader/graphs/contributors
+.. image:: https://user-images.githubusercontent.com/775507/103315213-6baf2400-4a3e-11eb-91aa-81a062966266.png
 
-.. |aur| image:: https://img.shields.io/aur/version/instaloader.svg
-   :alt: Arch User Repository Package
-   :target: https://aur.archlinux.org/packages/instaloader/
 
-.. |downloads| image:: https://pepy.tech/badge/instaloader/month
-   :alt: PyPI Download Count
-   :target: https://pepy.tech/project/instaloader/month
-
-.. badges-end
-
-::
+**Usage:**
 
     $ pip3 install instaloader
 
-    $ instaloader profile [profile ...]
+    $ instaloader username1 [username2 ...]
 
-**Instaloader**
 
 - downloads **public and private profiles, hashtags, user stories,
   feeds and saved media**,
